@@ -330,7 +330,7 @@ float CBaseHLCombatWeapon::CalcViewmodelBob( void )
 //-----------------------------------------------------------------------------
 void CBaseHLCombatWeapon::AddViewmodelBob( CBaseViewModel *viewmodel, Vector &origin, QAngle &angles )
 {
-	Vector	forward, right;
+	/*Vector	forward, right;
 	AngleVectors( angles, &forward, &right, NULL );
 
 	CalcViewmodelBob();
@@ -347,11 +347,11 @@ void CBaseHLCombatWeapon::AddViewmodelBob( CBaseViewModel *viewmodel, Vector &or
 
 	angles[ YAW ]	-= g_lateralBob  * 0.3f;
 
-	VectorMA( origin, g_lateralBob * 0.8f, right, origin );
+	VectorMA( origin, g_lateralBob * 0.8f, right, origin );*/
 }
 
 //-----------------------------------------------------------------------------
-Vector CBaseHLCombatWeapon::GetBulletSpread( WeaponProficiency_t proficiency )
+/*Vector CBaseHLCombatWeapon::GetBulletSpread( WeaponProficiency_t proficiency )
 {
 	return BaseClass::GetBulletSpread( proficiency );
 }
@@ -360,7 +360,7 @@ Vector CBaseHLCombatWeapon::GetBulletSpread( WeaponProficiency_t proficiency )
 float CBaseHLCombatWeapon::GetSpreadBias( WeaponProficiency_t proficiency )
 {
 	return BaseClass::GetSpreadBias( proficiency );
-}
+}*/
 //-----------------------------------------------------------------------------
 
 const WeaponProficiencyInfo_t *CBaseHLCombatWeapon::GetProficiencyValues()
